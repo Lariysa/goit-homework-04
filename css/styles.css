@@ -107,6 +107,19 @@ body{
     letter-spacing: 0.02em;
     color: var(--NAVY-BLUE, #2E2F42);
     padding: 24px 0;
+    position: relative;
+    transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
+
+ .line::after{
+    content:"";
+    display: block;
+    width: 48px;
+    height: 4px;
+    border-radius: 2px;
+    background: var(--OCEAN, #404BBF);
+    position: absolute;
+    transform: translate(0, 500%);
  }
 
 .menu-contacts {
@@ -147,10 +160,8 @@ body{
     padding-top: 36px;
     padding-bottom: 60px;
     padding: 188px 0;
-background-image: url(../images/hero-image.jpg);
-background-position: center center;
-background-size: cover;
-background-image: linear-gradient();
+    background-image:linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/hero-image.jpg);
+    background-position: center center;
 }
 
 .hero-images-title {  
@@ -202,8 +213,21 @@ background-image: linear-gradient();
         align-items: flex-start;
         gap: 8px;
         flex-grow: 1;
-        display: flex;
         width: calc((100% - 3 * 24px) / 4); 
+    }
+
+    .div-icon-svg{
+        width: 264px;
+        height: 112px;
+        flex-shrink: 0;
+        border-radius: 4px;
+        border: 1px solid var(--LIGHT-SLATE, #8E8F99);
+        background: var(--CLOUD, #F4F4FD);
+    }
+    .icon-svg {
+        display: flex; 
+        flex-shrink: 0;
+        margin: 24px 100px;
     }
 
     .business-rules-main {    
@@ -241,7 +265,7 @@ background-image: linear-gradient();
       letter-spacing: 0.02em;
       text-transform: capitalize;
       color: var(--NAVY-BLUE, #2E2F42);
-      margin-bottom: 72px; 
+      margin-bottom: 144px; 
     }
 
     .experts-list-tab {
@@ -260,6 +284,28 @@ background-image: linear-gradient();
 
     .experts-cont {
         padding: 32px 0;
+    }
+
+    .social-list{
+        display: flex;
+        justify-content: center;
+        column-gap: 24px;
+    }
+
+    .experts-icon{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        fill: #F4F4FD;
+        background-color: #4D5AE5;
+    }
+        
+       .experts-icon-svg{
+        flex-shrink: 0; 
+        margin: 12px; 
     }
 
     .experts-img-name {   
@@ -284,12 +330,14 @@ background-image: linear-gradient();
 
     .portfolio-list {
         width: calc((100% - 48px) / 3);
+        position: relative;
     }
 
     .portfolio-cont {
         padding: 32px 16px;
         border: 1px solid #e7e9fc; 
         border-top: none; 
+        
     }
 
     .portfolio-title {
@@ -326,12 +374,36 @@ background-image: linear-gradient();
        letter-spacing: 0.02em;
     }
 
-    /* Footer */
+    .overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: var(--IRIS, #4D5AE5);
+        width: 360px;
+        height: 300px;
+        flex-shrink: 0;  
+    }
+
+    .overlay-text{
+        display: block;
+        color: var(--CLOUD, #F4F4FD);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5; /* 150% */
+        letter-spacing: 0.02em;
+        width: 296px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 40px;
+    }
+        /* Footer */
 
     .footer-main {
         flex-shrink: 0;
         background: var(--NAVY-BLUE, #2E2F42);
         padding: 100px 0;
+    }
+    .container-footer{
     }
 
     .logo-link {
@@ -344,12 +416,26 @@ background-image: linear-gradient();
         color: var(--IRIS, #4D5AE5);
         display: inline-block;
         margin-bottom: 16px; 
+        display: flex;    
+    }
+
+    .Social-media{
+        color: var(--WHITE, #FFF);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5; /* 150% */
+        letter-spacing: 0.02em;
     }
 
     .logo-span {
-        color: var(--CLOUD, #F4F4FD);
-        
+        color: var(--CLOUD, #F4F4FD); 
     }
+
+    .list-footer{
+        display: flex; 
+        align-items: center;
+    }
+
     .page-footer {    
        font-size: 16px;
        font-weight: 400;
@@ -357,4 +443,24 @@ background-image: linear-gradient();
        letter-spacing: 0.02em;
        color: var(--CLOUD, #F4F4FD);
        width: 264px;
+       display: flex;
+       align-items: center;
+    }
+
+    .link-footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        fill: #F4F4FD;
+        background-color: #4D5AE5;
+    }
+    
+    .menu-footer{
+        justify-content: center;
+        column-gap: 16px;
+        display: flex;
+        align-items: center;
     }
