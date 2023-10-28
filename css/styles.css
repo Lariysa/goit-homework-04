@@ -68,6 +68,7 @@ body{
 .flex-container {
     display: flex;
     justify-content: space-between;
+    transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .section {
@@ -94,7 +95,7 @@ body{
     text-transform: uppercase;
     color: var(--IRIS, #4D5AE5);
     margin-right: 76px;
-    transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+   
 }
 
 .logotype-span {
@@ -183,11 +184,11 @@ body{
     padding-top: 36px;
     padding-bottom: 60px;
     padding: 188px 0;
-    background-image:linear-gradient(rgba(46, 47, 66, 0.70) rgba(46, 47, 66, 0.70)) url(../images/hero-image.jpg);
     background-position: center center;
     max-width: 1440px;
     background-repeat: no-repeat; 
-    background-size: cover; 
+    background-size: cover;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img-name.jpeg); 
 }
 
 .hero-images-title {  
@@ -318,7 +319,7 @@ body{
         gap: 32px;
         width: calc((100% - 3 * 24px) / 4);
         border-radius: 0px 0px 4px 4px;
-        box-shadow:0px 1px 6px rgba(46, 47, 66, 0.08) 0px 1px 1px rgba(46, 47, 66, 0.16) 0px 2px 1px rgba(46, 47, 66, 0.08); 
+        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     }
 
     .experts-cont {
@@ -329,6 +330,10 @@ body{
         display: flex;
         justify-content: center;
         gap: 24px;
+    
+    }
+
+    .list-icon{
         transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
     }
 
@@ -377,7 +382,7 @@ body{
     .portfolio-list {
         width: calc((100% - 48px) / 3);
         position: relative;
-        transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+        transition:  0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     }
 
     .portfolio-title {
@@ -439,7 +444,7 @@ body{
         border-top: none;
     }
 
-    .overlay-text{
+    .overlay-text {
         position: absolute;
         display: block;
         font-size: 16px;
@@ -460,7 +465,7 @@ body{
         transform: translateY(0%);
     }
 
-     .overlay-text .portfolio-list{
+     .overlay-text .portfolio-list {
         transform: translateY(0%);
        }
       
