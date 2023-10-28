@@ -82,8 +82,7 @@ body{
 
 .menu {
     display: flex;
-    gap: 40px;
-   
+    gap: 40px; 
    }
 
 .logotype {  
@@ -102,6 +101,10 @@ body{
     color: var(--NAVY-BLUE, #2E2F42);
 }
 
+.menu-item{
+    transition: background-color 500ms, cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .menu-link {    
     font-size: 16px;
     font-weight: 500;
@@ -110,7 +113,7 @@ body{
     color: var(--NAVY-BLUE, #2E2F42);
     padding: 24px 0;
     position: relative;
-    transition: background-color 500ms, cubic-bezier(0.4, 0, 0.2, 1);
+    
  }
 
  .menu-link-st{
@@ -141,11 +144,15 @@ body{
     gap: 40px;
     padding-top: 24px; 
     padding-bottom: 24px;
-    transition: background-color 500ms, cubic-bezier(0.4, 0, 0.2, 1);
+    transition:background-color 500ms, cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-list {
     font-style: normal;   
+}
+
+.menu-contacts-item{
+    transition:background-color 500ms, cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-link-contacts {    
@@ -157,7 +164,7 @@ body{
     gap: 40px;
     margin-left:auto;
     justify-content: flex-end;
-    transition: background-color 500ms, cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .menu-link-contacts:hover,
@@ -322,6 +329,7 @@ body{
         display: flex;
         justify-content: center;
         gap: 24px;
+        transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
     }
 
     .experts-icon{
@@ -387,12 +395,19 @@ body{
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 48px; 
+
    }
 
    .portfolio-list:hover,
    .portfolio-list:focus{
     box-shadow: 0px 1px 6px, rgba(46, 47, 66, 0.08), 0px 1px 1px, rgba(46, 47, 66, 0.16), 0px 2px 1px, rgba(46, 47, 66, 0.08);
    }
+
+   .portfolio-menu:hover,
+   .portfolio-menu:focus {
+    box-shadow: 0px 1px 6px, rgba(46, 47, 66, 0.08), 0px 1px 1px, rgba(46, 47, 66, 0.16), 0px 2px 1px, rgba(46, 47, 66, 0.08);
+   }
+     
 
     .portfolio-tab {
        font-size: 20px;
@@ -478,7 +493,7 @@ body{
         display: flex;    
     }
 
-    .Social-media{
+    .social-media{
         font-size: 16px;
         font-weight: 500;
         line-height: 1.5; /* 150% */
@@ -516,6 +531,7 @@ body{
         border-radius: 50%;
         fill: #F4F4FD;
         background-color: #4D5AE5;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     
     .menu-footer{
