@@ -148,8 +148,7 @@ body{
 }
 
 .menu-contacts-item{
-    transition:background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
-  
+    transition:background-color 500ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .menu-link-contacts {    
@@ -229,7 +228,6 @@ body{
         display: flex;
         align-items: center; 
         justify-content: center; 
-        margin-bottom: 8px; 
     }
 
     .menu-business {
@@ -271,7 +269,6 @@ body{
        line-height: 1.2; /* 120% */
        letter-spacing: 0.02em;
        color: var(--NAVY-BLUE, #2E2F42);
-       margin-bottom: 8px; 
     }
     
     .business-rules-text {
@@ -318,11 +315,7 @@ body{
         box-shadow:  0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
     }
 
-    .experts-cont {
-        padding: 32px 0;
-    }
-
-    .social-list{
+       .social-list{
         display: flex;
         justify-content: center;
         gap: 24px;
@@ -389,6 +382,8 @@ body{
         align-items: flex-start;
         gap: 32px;
         flex-shrink: 0;
+        display: flex;
+        border: 1px;
     }
 
     .portfolio-title {
@@ -403,10 +398,9 @@ body{
     }
 
    .portfolio-menu {
-    flex-wrap: wrap;
-    column-gap: 24px;
-    row-gap: 48px; 
-
+       flex-wrap: wrap;
+       column-gap: 24px;
+       row-gap: 48px; 
    }
 
    .portfolio-list:hover,
@@ -432,8 +426,7 @@ body{
 
     .overlay{
         position: relative; 
-        overflow: hidden;
-        
+        overflow: hidden;  
     }
 
     .overlay-text {
@@ -452,6 +445,15 @@ body{
         transform: translateY(100%); 
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
         color: var(--CLOUD, #F4F4FD);
+    }
+
+    .portfolio-cont{
+        width: Fixed (360px);
+        height: Hug (56px);
+        top: 332px;
+        padding: 0px, 16px, 0px, 16px;
+        gap: 8px;
+
     }
       
     .portfolio-list:hover .overlay-text{
