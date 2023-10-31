@@ -107,7 +107,7 @@ body{
     line-height: 1.5; /* 150% */
     letter-spacing: 0.02em;
     color: var(--NAVY-BLUE, #2E2F42);
-    padding: 24px 0;
+   
     position: relative;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);  
  }
@@ -118,7 +118,6 @@ body{
     font-weight: 500;
     line-height: 1.5; /* 150% */
     letter-spacing: 0.02em;
-    padding: 7px 0;
     position: relative;
    transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
@@ -132,6 +131,7 @@ body{
     background: var(--OCEAN, #404BBF);
     position: absolute;
     transform: translate(0, 500%);
+   margin-top: 24px;
     bottom: -1px;
  }
 
@@ -240,7 +240,6 @@ body{
         width: 264px;
         flex-direction: column;
         align-items: flex-start;
-        gap: 8px;
         flex-grow: 1;
         width: calc((100% - 3 * 24px) / 4); 
     }
@@ -305,7 +304,6 @@ body{
         background-color: #FFFFFF;
         width: 264px;
         display: inline-flex;
-       
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -316,7 +314,7 @@ body{
     }
 
     .experts-cont{
-        padding: 32px 0;
+        margin-bottom: 32px;
     }
 
        .social-list{
